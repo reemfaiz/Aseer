@@ -1,4 +1,6 @@
 {
+  "buildCommand": "pnpm install && pnpm run build:client",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/(.*)",
