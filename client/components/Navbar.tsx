@@ -37,7 +37,7 @@ export default function Navbar() {
             Our Vision
           </Link>
           <Link to="/about-product" className="text-xs sm:text-sm text-white hover:opacity-80 rounded-full px-2 sm:px-4 py-1 transition whitespace-nowrap">
-            Our the product
+            Our product
           </Link>
           <a
             href={emailLink}
@@ -87,7 +87,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)}
             className="block text-sm text-white hover:opacity-80 px-4 py-2 rounded-full transition whitespace-nowrap hover:bg-white/10"
           >
-            Our the product
+            Our product
           </Link>
           <a
             href={emailLink}

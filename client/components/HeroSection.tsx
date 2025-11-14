@@ -51,11 +51,11 @@ export default function HeroSection() {
                     </div>
                   </h2>
                   <div className="flex flex-col gap-3 mt-4 sm:mt-6">
-                    <button className="flex items-center gap-2 rounded-full border border-aseer-light-purple bg-aseer-purple text-aseer-dark font-inter text-xs sm:text-sm font-medium hover:scale-105 hover:shadow-xl transition-all duration-300 w-full md:w-auto px-6 sm:px-10 py-2 sm:py-3 justify-center md:justify-start">
+                    <button onClick={() => document.getElementById('product-features')?.scrollIntoView({ behavior: 'smooth' })} className="flex items-center gap-2 rounded-full border border-aseer-light-purple bg-aseer-purple text-aseer-dark font-inter text-xs sm:text-sm font-medium hover:scale-105 hover:shadow-xl transition-all duration-300 w-full md:w-auto px-6 sm:px-10 py-2 sm:py-3 justify-center md:justify-start">
                       <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.54984 3.6719C4.89548 3.16227 4.53289 2.79969 4.02355 0.145301C4.01567 0.104412 3.99383 0.0675397 3.96172 0.0410225C3.92962 0.0145053 3.88929 0 3.84764 0C3.80603 0 3.76567 0.0145053 3.73357 0.0410225C3.70147 0.0675397 3.67961 0.104412 3.67175 0.145301C3.1624 2.79969 2.79982 3.16227 0.145297 3.6719C0.104419 3.67971 0.0675469 3.70156 0.0410274 3.73362C0.0145081 3.76573 0 3.80602 0 3.84763C0 3.88928 0.0145081 3.92957 0.0410274 3.96168C0.0675469 3.99374 0.104419 4.01559 0.145297 4.0234C2.79981 4.53289 3.1624 4.89517 3.67175 7.54983C3.67964 7.59069 3.70152 7.62755 3.73362 7.65403C3.76572 7.68052 3.80603 7.695 3.84764 7.695C3.88925 7.695 3.92958 7.68052 3.96168 7.65403C3.99379 7.62755 4.01563 7.59069 4.02355 7.54983C4.53289 4.89517 4.89548 4.53289 7.54984 4.0234C7.59074 4.01559 7.62759 3.99374 7.65412 3.96168C7.68064 3.92957 7.69516 3.88928 7.69516 3.84763C7.69516 3.80602 7.68064 3.76573 7.65412 3.73362C7.62759 3.70156 7.59074 3.67971 7.54984 3.6719Z" fill="#181947"/>
                       </svg>
-                      <div className="text-xs sm:text-xs font-semibold">The Minds Behind the Nission !</div>
+                      <div className="text-xs sm:text-xs font-semibold">Meet the Minds Behind Aseer</div>
                     </button>
                   </div>
                 </div>

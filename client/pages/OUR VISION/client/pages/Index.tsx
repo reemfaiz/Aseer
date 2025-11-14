@@ -50,12 +50,8 @@ export default function Index() {
                 Lead the middle<br />
                 east in ai powered decision-making
               </p>
-              
-              <div className="absolute -top-2 -right-2 w-12 h-12 rounded-full bg-[#848FE1] flex items-center justify-center transform rotate-[-45deg] transition-transform duration-300 group-hover:rotate-0 group-hover:scale-110">
-                <svg width="24" height="24" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="transform rotate-45">
-                  <path d="M18.0294 10.6061H23.3327M23.3327 10.6061V15.9094M23.3327 10.6061L10.6048 23.3341" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Fce5cc3e3ce1f4e97b565e3d7a63a4ab0%2Fefe831959e114e2fa4377e90ef7867d6?format=webp&width=800" alt="star decoration" className="absolute -top-4 -right-4 w-12 h-12 animate-star-float" />
             </div>
           </div>
 
@@ -67,12 +63,8 @@ export default function Index() {
                 integrating analytics,innovation,<br />
                 and governance
               </p>
-              
-              <div className="absolute -top-2 -right-2 w-12 h-12 rounded-full bg-[#848FE1] flex items-center justify-center transform rotate-[-45deg] transition-transform duration-300 group-hover:rotate-0 group-hover:scale-110">
-                <svg width="24" height="24" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="transform rotate-45">
-                  <path d="M18.0294 10.6061H23.3327M23.3327 10.6061V15.9094M23.3327 10.6061L10.6048 23.3341" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Fce5cc3e3ce1f4e97b565e3d7a63a4ab0%2Fefe831959e114e2fa4377e90ef7867d6?format=webp&width=800" alt="star decoration" className="absolute -top-4 -right-4 w-12 h-12 animate-star-float" />
             </div>
           </div>
 
@@ -83,12 +75,8 @@ export default function Index() {
                 Drive sustainable<br />
                 growth and long-term impact across industries
               </p>
-              
-              <div className="absolute -top-2 -right-2 w-12 h-12 rounded-full bg-[#848FE1] flex items-center justify-center transform rotate-[-45deg] transition-transform duration-300 group-hover:rotate-0 group-hover:scale-110">
-                <svg width="24" height="24" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" className="transform rotate-45">
-                  <path d="M18.0294 10.6061H23.3327M23.3327 10.6061V15.9094M23.3327 10.6061L10.6048 23.3341" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
+
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Fce5cc3e3ce1f4e97b565e3d7a63a4ab0%2Fefe831959e114e2fa4377e90ef7867d6?format=webp&width=800" alt="star decoration" className="absolute -top-4 -right-4 w-12 h-12 animate-star-float" />
             </div>
           </div>
         </div>
@@ -132,6 +120,13 @@ export default function Index() {
         .logo-animate { animation: logoSlide 0.9s cubic-bezier(.2,.9,.2,1) both; }
 
         .vision-card { backdrop-filter: blur(10px); }
+
+        @keyframes starFloat {
+          0%, 100% { transform: translateY(0) rotate(0deg); }
+          50% { transform: translateY(-12px) rotate(180deg); }
+        }
+
+        .animate-star-float { animation: starFloat 3s ease-in-out forwards; }
       `}</style>
     </div>
   );

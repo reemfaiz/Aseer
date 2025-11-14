@@ -92,7 +92,7 @@ export default function ProductFeatures() {
   }, []);
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="product-features" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-[1440px] mx-auto">
         <h2
           ref={titleRef}
@@ -142,16 +142,6 @@ export default function ProductFeatures() {
           />
         </div>
 
-        <div className="flex justify-center gap-2 flex-wrap">
-          {[...Array(9)].map((_, i) => (
-            <div
-              key={i}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                i === 0 ? 'bg-aseer-purple' : 'bg-aseer-light-purple'
-              }`}
-            />
-          ))}
-        </div>
       </div>
     </section>
   );

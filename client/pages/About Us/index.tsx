@@ -101,15 +101,6 @@ export default function AboutUs() {
               </p>
             </motion.div>
 
-            {/* Explore button under blue card (spans first column) */}
-            <motion.div className="lg:col-start-1 mt-4 lg:mt-6 flex" initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <motion.button className="inline-flex items-center gap-3 px-6 py-3 rounded-full text-white font-poppins" style={{ background: 'radial-gradient(129.81% 50% at 50% 50%, #848FE1 0%, #336 100%)' }} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <span>Explore Our Solutions</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 12h14M13 5l7 7-7 7" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </motion.button>
-            </motion.div>
           </div>
 
           {/* Social Media Icons */}
@@ -153,17 +144,13 @@ export default function AboutUs() {
       {/* Short intro and Meet the Experts badge (moved per diff) */}
       <div className="px-4 md:px-12 mt-4">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6 text-center">
-          <button
-            onClick={() => foundersRef.current?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-10 py-3 rounded-full text-white font-poppins shadow-lg"
-            style={{ background: 'linear-gradient(90deg,#848FE1,#336)', boxShadow: '0 8px 20px rgba(0,0,0,0.25)' }}
-          >
-            Pull under ↓
-          </button>
 
-          <div className="text-white text-[18px] leading-7 max-w-[672px] mt-8">We believe that leadership begins with an idea and is built with passion. Learn about who started the journey.</div>
-
-          <div className="inline-block rounded-full px-6 py-3 bg-gradient-to-br from-[#848FE1] to-[#336] text-white">Meet the Experts</div>
+          <div className="flex flex-col items-center gap-3 mt-8">
+            <div className="text-white text-[18px] leading-7 max-w-[672px]">We believe that leadership begins with an idea and is built with passion. Learn about who started the journey.</div>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M12 5v14M12 19l-6-6M12 19l6-6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
         </div>
       </div>
 
