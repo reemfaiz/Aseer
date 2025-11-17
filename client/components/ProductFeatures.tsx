@@ -92,7 +92,7 @@ export default function ProductFeatures() {
   }, []);
 
   return (
-    <section id="product-features" className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-[1440px] mx-auto">
         <h2
           ref={titleRef}

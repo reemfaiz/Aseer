@@ -85,7 +85,10 @@ export default function AboutUs() {
 
             {/* Side Card */}
             <motion.div
-              className="rounded-2xl bg-white p-6 flex flex-col items-center justify-between h-auto lg:h-[324px] shadow-xl"
+              className="rounded-2xl border border-white p-6 flex flex-col items-center justify-between h-auto lg:h-[324px] shadow-xl"
+              style={{
+                background: 'radial-gradient(122.33% 368.39% at 82.65% 30.41%, #336 24.52%, #848FE1 93.27%)',
+              }}
               initial={{ opacity: 0, y: 50 }}
               animate={heroInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -96,7 +99,7 @@ export default function AboutUs() {
                 alt="Biometric security"
                 className="w-full h-40 object-cover rounded-2xl border border-[#DADCF5] mb-4"
               />
-              <p className="text-[#161644] text-center font-aboreto text-sm md:text-base leading-relaxed capitalize">
+              <p className="text-white text-center font-aboreto text-sm md:text-base leading-relaxed capitalize">
                 smart decisions<br />intelligent<br />management for<br />tomorrow
               </p>
             </motion.div>
